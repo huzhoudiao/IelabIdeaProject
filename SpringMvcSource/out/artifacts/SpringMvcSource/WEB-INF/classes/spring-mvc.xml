@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+      name：给当前控制器取的一个名字,相当于Servlet中的资源名称,以便浏览器访问，必须以斜杠/开头
+      建议使用 name属性,不要使用id,因为早期版本 id 不支持特殊字符 如 /斜杠
+     -->
+    <!-- 配置自动扫描的包 -->
+     <context:component-scan base-package="com.ielab.test.controller"></context:component-scan>
+<!--    <bean name="/user/hello.do" class="org.brick.controller.UserController" />-->
+</beans>
